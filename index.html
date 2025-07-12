@@ -9,17 +9,34 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Boxicons CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
+      <div class="container header-flex">
         <h1 class="logo">Celumanía</h1>
-        <nav class="navbar">
-          <a href="#inicio">Inicio</a>
-          <a href="#categorias">Categorías</a>
-          <a href="#destacados">Destacados</a>
-          <a href="#contacto">Contacto</a>
+
+        <!-- Botón menú hamburguesa -->
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <i class="bx bx-menu"></i>
+        </button>
+
+        <!-- Menú Mobile -->
+        <nav class="mobile-menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <i class="bx bx-x"></i>
+          </button>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#destacados">Destacados</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -67,7 +84,9 @@
             <p>$11.500</p>
           </div>
         </div>
-        <a href="#" class="btn">Ver todo el catálogo</a>
+        <div class="btn-dest">
+          <a href="#" class="btn">Ver todo el catálogo</a>
+        </div>
       </div>
     </section>
 
@@ -83,5 +102,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
