@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenu.classList.remove("active");
   });
 
-  // Ocultar menú al hacer clic en cualquier enlace
+  // Ocultar menú al hacer clic en un enlace
   document.querySelectorAll(".mobile-menu a").forEach(link => {
     link.addEventListener("click", () => {
       mobileMenu.classList.remove("active");
